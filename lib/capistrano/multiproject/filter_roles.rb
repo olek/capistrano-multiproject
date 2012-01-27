@@ -4,6 +4,7 @@ Capistrano::Configuration.instance.load do
     task :filter_roles do
       project_roles_sym = project_roles.map(&:to_sym)
       roles.select! { |k,v| project_roles_sym.include?(k) }
+      logger.info "Filtered roles down to '#{roles.keys.join(', ')}'"
     end
   end
 
