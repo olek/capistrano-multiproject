@@ -8,7 +8,7 @@ Capistrano::Configuration.instance.load do
 
   set(:application) { project }
 
-  _cset(:project_roles) { abort "Project roles must be specified in project recipe (e.g. 'set :project_roles, [:foo, :bar]')" }
+  _cset(:project_roles) { [project] }
 
   # configurations root directory
   config_root = File.expand_path(fetch(:config_root, "config/deploy"))
