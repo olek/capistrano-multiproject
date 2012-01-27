@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "capistrano-multiproject"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.authors     = ["Olek Poplavsky"]
   s.email       = ["olek@woodenbits.com"]
   s.homepage    = "https://github.com/woodenbits/capistrano-multiproject"
@@ -27,6 +27,9 @@ It is not quite enough if you have multiple projects to deploy (SOA would be one
     Gemfile
     lib/capistrano/multiproject/configurations.rb
     lib/capistrano/multiproject/ensure.rb
+    lib/capistrano/multiproject/filter_roles.rb
+    lib/capistrano/multiproject/any_server_role.rb
+    lib/capistrano/multiproject/task_list.rb
     lib/capistrano/multiproject.rb
     Rakefile
     README.md
