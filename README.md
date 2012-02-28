@@ -151,11 +151,7 @@ Example config/deploy/projects/admin.rb:
 Compatibility
 -------------
 
-So far it was tested to work under ruby 1.9.
-
-There is no good reason why it would not work with ruby 1.8, if you find problem with that, come
-back to me and we will fix it together :)
-
+Tested against MRI 1.9.3 and 1.8.7.
 
 License
 -------
