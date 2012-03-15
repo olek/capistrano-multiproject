@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "capistrano-multiproject"
-  s.version     = "0.0.3"
+  s.version     = "0.0.4"
   s.authors     = ["Olek Poplavsky"]
   s.email       = ["olek@woodenbits.com"]
   s.homepage    = "https://github.com/woodenbits/capistrano-multiproject"

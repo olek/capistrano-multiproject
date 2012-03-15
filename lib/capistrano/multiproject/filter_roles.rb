@@ -4,7 +4,7 @@ Capistrano::Configuration.instance.load do
     task :filter_roles do
       project_roles_sym = project_roles.map { |o| o.to_sym }
       roles.delete_if { |k,v| !project_roles_sym.include?(k) }
-      logger.info "Filtered roles down to '#{roles.keys.sort.join(', ')}'"
+      logger.info "Filtered roles down to '#{roles.keys.map { |o| o.to_s }.sort.join(', ')}'"
       if roles.empty? && project_roles == [project]
         abort "Define servers of role '#{project}' in stage '#{stage}' configuration, or specify project roles in project recipe (e.g. 'set :project_roles, [:foo, :bar]')"
       end
