@@ -20,7 +20,7 @@ It is not quite enough if you have multiple projects to deploy (SOA would be one
 
   ## List your runtime dependencies here. Runtime dependencies are those
   ## that are needed for an end user to actually USE your code.
-  s.add_dependency('capistrano', "~> 2.9.0")
+  s.add_dependency('capistrano', "~> 2.15.0")
 
   s.files = %w[
     capistrano-multiproject.gemspec
